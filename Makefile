@@ -5,3 +5,10 @@ install:
 
 format:
 	black *.py mylib/*.py
+
+lint:
+	# it disables Recommended warnings(R) and configuration warnings(C)
+	pylint --disable=R,C *.py mylib/*.py
+
+test:
+	python -m pytest -vv --cov=mylib test_logic.py
