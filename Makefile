@@ -1,5 +1,4 @@
 install:
-    # install commands
-
-format:
-    # format code
+	# install files
+	pip install --upgrade pip
+	pip install -r requirements.txt
